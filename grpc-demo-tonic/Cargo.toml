@@ -1,0 +1,21 @@
+[package]
+name = "grpc-demo-tonic"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# server binary
+[[bin]]
+    name = "server"
+    path = "src/server.rs"
+
+# client binary
+[[bin]]
+    name = "client"
+    path = "src/client.rs"
+
+tonic = "0.7.1"
+hello = "1.0.4"
+tokio = "*"
