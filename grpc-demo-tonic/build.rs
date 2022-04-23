@@ -9,4 +9,3 @@ fn main(){
         });
 
         println!("cargo:return-if-changed= {}", proto_file);
-}
